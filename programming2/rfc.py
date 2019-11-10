@@ -46,3 +46,7 @@ if __name__ == '__main__':
     accuracy = np.sum(y_test == X_test_predict) / y_test.shape[0]
     assert(accuracy > 0.9)
     print('acc:', accuracy)
+
+    # TODO: Add code to train and evaluate a decision tree using
+    #   X_train, X_test, y_train, and y_test
+    pass
