@@ -12,15 +12,38 @@ def load_dataset(path):
     return X, y
 
 
-def linear_kernel(X, y):
+# Implement the linear kernel for a bunch of data
+# x: nd.array with shape (n1_samples, m_features)
+# y: nd.array with shape (n2_samples, m_features)
+# Output z: nd.array with shape (n1_samples, n2_samples) such that
+#   z[i,j] is the result of the linear kernel with x[i] and y[j]
+#   (see the lecture slide for the definition of the linear kernel)
+def linear_kernel(x, y):
+    # TODO: IMPLEMENT ME
     pass
 
 
-def polynominal_kernel(X, y, d, c):
+# Implement the polynominal kernel for a bunch of data
+# x: nd.array with shape (n1_samples, m_features)
+# y: nd.array with shape (n2_samples, m_features)
+# d: degree (float)
+# c: constant term (float)
+# Output z: nd.array with shape (n1_samples, n2_samples) such that
+#   z[i,j] is the result of the polynominal kernel with x[i] and y[j]
+#   (see the lecture slide for the definition of the polynominal kernel)
+def polynominal_kernel(x, y, d, c):
+    # TODO: IMPLEMENT ME
     pass
 
-
-def rbf_kernel(X, y, gamma):
+# Implement the RBF kernel for a bunch of data
+# x: nd.array with shape (n1_samples, m_features)
+# y: nd.array with shape (n2_samples, m_features)
+# gamma: float
+# Output z: nd.array with shape (n1_samples, n2_samples) such that
+#   z[i,j] is the result of the RBF kernel with x[i] and y[j]
+#   (see the lecture slide for the definition of the RBF kernel)
+def rbf_kernel(x, y, gamma):
+    # TODO: IMPLEMENT ME
     pass
 
 
