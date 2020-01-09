@@ -31,7 +31,6 @@ if __name__ == '__main__':
     import numpy as np
     from sklearn.datasets import load_iris
     from sklearn.metrics import mean_squared_error
-    np.random.set_state(0)
 
     K = 3
     iris_dataset = load_iris()
@@ -45,3 +44,4 @@ if __name__ == '__main__':
             np.tile(kmeans.cluster_centers_[k], (features.shape[0], 1)),
             features)
         print('Cluster', k, 'MSE', MSE)
+        assert(MSE < 0.2)
